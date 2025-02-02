@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Website</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!--Classic container, shoutout to bootstrap-->
+<body class="container">
+    <h1>Games Table</h1>
+    <br>
+    <!--Made the form to fill out a card to keep everything neat-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="game-title">Game Title</label>
+                    <input type="text" class="form-control" id="game-title" required>
+                </div>
+                <div class="col-sm">
+                    <label for="release-date">Release Date</label>
+                    <input type="date" class="form-control" id="release-date" required>
+                </div>
+                <div class="col-sm">
+                    <label for="developer">Developer</label>
+                    <input type="text" class="form-control" id="developer" required>
+                </div>
+            </div> <br>
+            <button type="submit" class="btn btn-success" id="submit">Submit</button>
+        </div>
+    </div>
+    <table id="table" class="table table-danger table-striped">
+        <th>Game Title</th>
+        <th>Release Date</th>
+        <th>Developer</th>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
